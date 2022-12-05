@@ -1,0 +1,113 @@
+[debug] [2022-09-19T09:59:20.610Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T09:59:20.614Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-19T09:59:20.615Z] CLI Version:   11.9.0
+[debug] [2022-09-19T09:59:20.616Z] Platform:      win32
+[debug] [2022-09-19T09:59:20.616Z] Node Version:  v16.15.0
+[debug] [2022-09-19T09:59:20.618Z] Time:          Mon Sep 19 2022 15:29:20 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T09:59:20.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T09:59:20.626Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-09-19T09:59:20.789Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T09:59:20.789Z] > authorizing via signed-in user (devanshujaiswal121@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Project\amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2022-09-19T09:59:22.206Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-09-19T09:59:22.206Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-19T10:00:17.728Z] Using project from CLI flag: clone-c0687
+[debug] [2022-09-19T10:00:17.731Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T10:00:17.732Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T10:00:17.733Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:00:18.253Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T10:00:18.253Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:00:18.254Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 [none]
+[debug] [2022-09-19T10:00:19.315Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 401
+[debug] [2022-09-19T10:00:19.315Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T10:00:19.317Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T10:00:20.091Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project clone-c0687. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-19T10:01:16.974Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T10:01:16.977Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2022-09-19T10:01:16.977Z] CLI Version:   11.9.0
+[debug] [2022-09-19T10:01:16.978Z] Platform:      win32
+[debug] [2022-09-19T10:01:16.978Z] Node Version:  v16.15.0
+[debug] [2022-09-19T10:01:16.979Z] Time:          Mon Sep 19 2022 15:31:16 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T10:01:16.979Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T10:01:17.043Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T10:01:17.043Z] > authorizing via signed-in user (devanshujaiswal121@gmail.com)
+[debug] [2022-09-19T10:01:17.045Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T10:01:17.047Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T10:01:17.047Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:01:17.738Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T10:01:17.739Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:01:17.741Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2022-09-19T10:01:18.501Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2022-09-19T10:01:18.501Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-09-19T10:01:18.502Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T10:01:18.974Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2022-09-19T10:04:22.191Z] ----------------------------------------------------------------------
+[debug] [2022-09-19T10:04:22.194Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-19T10:04:22.194Z] CLI Version:   11.9.0
+[debug] [2022-09-19T10:04:22.195Z] Platform:      win32
+[debug] [2022-09-19T10:04:22.195Z] Node Version:  v16.15.0
+[debug] [2022-09-19T10:04:22.196Z] Time:          Mon Sep 19 2022 15:34:22 GMT+0530 (India Standard Time)
+[debug] [2022-09-19T10:04:22.196Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-19T10:04:22.263Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-19T10:04:22.264Z] > authorizing via signed-in user (devanshujaiswal121@gmail.com)
+[debug] [2022-09-19T10:04:22.264Z] [iam] checking project clone-c0687 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-19T10:04:22.266Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T10:04:22.267Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T10:04:22.268Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:04:23.200Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T10:04:23.201Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:04:23.201Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c0687:testIamPermissions [none]
+[debug] [2022-09-19T10:04:23.201Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c0687:testIamPermissions x-goog-quota-user=projects/clone-c0687
+[debug] [2022-09-19T10:04:23.202Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c0687:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-19T10:04:26.096Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c0687:testIamPermissions 401
+[debug] [2022-09-19T10:04:26.096Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-c0687:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-09-19T10:04:26.098Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T10:04:26.098Z] > refreshing access token with scopes: []
+[debug] [2022-09-19T10:04:26.099Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-19T10:04:26.099Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:04:26.722Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-09-19T10:04:26.723Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-19T10:04:26.724Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 [none]
+[debug] [2022-09-19T10:04:28.043Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 401
+[debug] [2022-09-19T10:04:28.043Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-c0687 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-09-19T10:04:28.044Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-09-19T10:04:28.862Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Devanshu\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project clone-c0687. Please make sure the project exists and your account has permission to access it.
